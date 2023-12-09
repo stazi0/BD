@@ -1,4 +1,4 @@
-package com.example.android.unscramble.ui.game
+package com.example.android.unscramble.profiledb
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
