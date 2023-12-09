@@ -68,13 +68,13 @@ class GameFragment : Fragment() {
             Log.d("Room","generateAndSaveProfile OnClick")
             viewModel.saveProfile()
         }
-        //binding.submit.setOnClickListener { onSubmitWord() }
-        //binding.skip.setOnClickListener { onSkipWord() }
+        binding.submit.setOnClickListener { onSubmitWord() }
+        binding.skip.setOnClickListener { onSkipWord() }
         // Update the UI
-        //updateNextWordOnScreen()
-        //binding.score.text = getString(R.string.score, 0)
-        //binding.wordCount.text = getString(
-        //        R.string.word_count, 0, MAX_NO_OF_WORDS)
+        updateNextWordOnScreen()
+        binding.score.text = getString(R.string.score, 0)
+        binding.wordCount.text = getString(
+                R.string.word_count, 0, MAX_NO_OF_WORDS)
     }
 
     private fun onReadProfiles() {

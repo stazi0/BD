@@ -1,7 +1,14 @@
 package com.example.android.unscramble.ui.game
 
-class Profile(
-    val name: String,
-    val email: String
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
+@Entity(tableName = "profile_table")
+class Profile(
+    @PrimaryKey
+    @ColumnInfo(name = "word")
+    val name: String,
+    @ColumnInfo(name = "email")
+    val email: String
 )

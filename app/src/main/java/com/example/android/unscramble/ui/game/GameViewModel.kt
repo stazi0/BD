@@ -1,6 +1,8 @@
 package com.example.android.unscramble.ui.game
 
-class GameViewModel {
+import androidx.lifecycle.ViewModel
+
+class GameViewModel :ViewModel(){
     fun readProfiles() {
         TODO("Not yet implemented")
     }
@@ -9,4 +11,4 @@ class GameViewModel {
         TODO("Not yet implemented")
     }
 
-    private val viewModel: GameViewModel by viewModels()
+}
